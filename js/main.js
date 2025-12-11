@@ -111,7 +111,7 @@ function setupMotivationalQuotes() {
     // Mostrar la primera cita
     showQuote();
 
-    // Cambiar cita cada 4 segundos
+    // Cambiar cita cada 6 segundos
     setInterval(showQuote, 4000);
 }
 
@@ -453,5 +453,5 @@ const scrollHandler = throttle(() => {
 
 window.addEventListener('scroll', scrollHandler);
 
-console.log('🏋️ Elite Training - Website loaded successfully!');
+console.log('⚽ Elite Training - Website loaded successfully!');
 console.log('💪 Desarrollado con pasión y dedicación');
