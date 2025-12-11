@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entrenador de fútbol profesional - Formación integral para niños, jóvenes y adultos">
+    <title>Fútbol Academy | Entrenador Profesional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-futbol"></i>
+                <span>FÚTBOL ACADEMY</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#cotizacion" class="nav-link">Cotización</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Profesor Juan García</h1>
+            <p class="hero-subtitle fade-in-delay">Entrenador de Fútbol Certificado</p>
+            <div class="motivational-text" id="motivationalText">
+                <p class="motivational-quote"></p>
+            </div>
+            <a href="#cotizacion" class="btn-primary pulse">Entrena Conmigo</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- SECCIÓN BENEFICIOS -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title" data-scroll="fade-up">¿Por Qué Entrenar Fútbol Conmigo?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-scroll="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Formación Integral</h3>
+                    <p>Desarrollo técnico, táctico y valores deportivos para niños, jóvenes y adultos</p>
+                </div>
+                <div class="benefit-card" data-scroll="fade-up" data-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Técnica Profesional</h3>
+                    <p>Metodología europea adaptada a todos los niveles y edades</p>
+                </div>
+                <div class="benefit-card" data-scroll="fade-up" data-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Entrenamientos Personalizados</h3>
+                    <p>Clases individuales y grupales adaptadas a tus objetivos</p>
+                </div>
+                <div class="benefit-card" data-scroll="fade-up" data-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Resultados Comprobados</h3>
+                    <p>Más de 15 años formando futbolistas de todas las edades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-scroll="fade-up">Contáctame</h2>
+            <p class="section-subtitle" data-scroll="fade-up">Estoy aquí para ayudarte a mejorar tu fútbol</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/573001234567" target="_blank" class="contact-btn whatsapp" data-scroll="slide-left">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://instagram.com/tuusuario" target="_blank" class="contact-btn instagram" data-scroll="slide-right">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN COTIZACIÓN -->
+    <section id="cotizacion" class="quote">
+        <div class="container">
+            <h2 class="section-title" data-scroll="fade-up">Solicita Tu Cotización</h2>
+            <p class="section-subtitle" data-scroll="fade-up">Completa el formulario y te contactaré en menos de 24 horas</p>
+            <form class="quote-form" id="quoteForm" data-scroll="fade-up">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error-message" id="errorNombre"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="errorEmail"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <span class="error-message" id="errorTelefono"></span>
+                </div>
+                <div class="form-group">
+                    <label for="tipoEntrenamiento">Tipo de Entrenamiento *</label>
+                    <select id="tipoEntrenamiento" name="tipoEntrenamiento" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="ninos-iniciacion">Niños - Iniciación (5-10 años)</option>
+                        <option value="juvenil">Juvenil - Competitivo (11-17 años)</option>
+                        <option value="adultos">Adultos - Recreativo</option>
+                        <option value="tecnica-individual">Técnica Individual</option>
+                        <option value="preparacion-fisica">Preparación Física Específica</option>
+                        <option value="porteros">Entrenamiento de Porteros</option>
+                    </select>
+                    <span class="error-message" id="errorTipo"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Cuéntame Sobre Tus Objetivos Futbolísticos</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ejemplo: Mejorar técnica de regate, preparación para pruebas, etc."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <span class="btn-text">Enviar Cotización</span>
+                    <span class="btn-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-futbol"></i>
+                    <span>FÚTBOL ACADEMY</span>
+                </div>
+                <p>&copy; 2025 Fútbol Academy. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/573001234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/tuusuario" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
